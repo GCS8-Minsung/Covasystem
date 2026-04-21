@@ -163,7 +163,7 @@ Redis (실시간 캐시 / 알림 큐)
 | 테이블 | 용도 |
 |--------|------|
 | `sites` | 사이트(컨테이너) 마스터 |
-| `users` | 사용자 + bcrypt 해시 비밀번호 |
+| `사용자` | 사용자 + bcrypt 해시 비밀번호 |
 | `api_keys` | 발급된 API 키 + 권한 범위 |
 | `sensor_logs` | CO₂·온도·pH·조도 시계열 (TimescaleDB hypertable) |
 | `events` | 알림 이벤트 로그 |
@@ -290,4 +290,4 @@ docs(README): 로드맵 업데이트
 ---
 
 > **Cova System** — Carbon to Life.  
-> Green Carbon Solution · GCS8 Team · 2025
+> Green Carbon Solution · GCS8 Team · 2026
