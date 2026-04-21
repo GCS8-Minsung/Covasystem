@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Transition - Carbon Capture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error": "#690005",
+                      "surface-container-highest": "#353535",
+                      "surface-container-low": "#1c1b1b",
+                      "outline-variant": "#3d4a3e",
+                      "on-secondary": "#00315d",
+                      "on-primary-fixed-variant": "#005227",
+                      "surface-bright": "#393939",
+                      "primary": "#6bfb9a",
+                      "tertiary": "#e2e0df",
+                      "on-tertiary-fixed-variant": "#474747",
+                      "secondary-fixed-dim": "#a4c9ff",
+                      "primary-container": "#4ade80",
+                      "surface-tint": "#4de082",
+                      "inverse-primary": "#006d36",
+                      "error-container": "#93000a",
+                      "on-surface": "#e5e2e1",
+                      "surface-container-lowest": "#0e0e0e",
+                      "tertiary-fixed": "#e4e2e1",
+                      "surface-variant": "#353535",
+                      "secondary": "#a4c9ff",
+                      "on-primary-fixed": "#00210c",
+                      "tertiary-fixed-dim": "#c8c6c6",
+                      "on-surface-variant": "#bccabb",
+                      "surface-container": "#20201f",
+                      "on-secondary-fixed-variant": "#004883",
+                      "surface-dim": "#131313",
+                      "secondary-container": "#0267b8",
+                      "tertiary-container": "#c6c4c4",
+                      "primary-fixed": "#6dfe9c",
+                      "on-secondary-container": "#d6e5ff",
+                      "on-primary-container": "#005e2d",
+                      "inverse-on-surface": "#313030",
+                      "on-tertiary-container": "#515151",
+                      "on-primary": "#003919",
+                      "surface-container-high": "#2a2a2a",
+                      "error": "#ffb4ab",
+                      "secondary-fixed": "#d4e3ff",
+                      "on-secondary-fixed": "#001c39",
+                      "on-error-container": "#ffdad6",
+                      "primary-fixed-dim": "#4de082",
+                      "inverse-surface": "#e5e2e1",
+                      "on-background": "#e5e2e1",
+                      "surface": "#131313",
+                      "on-tertiary": "#303030",
+                      "on-tertiary-fixed": "#1b1c1c",
+                      "outline": "#869486",
+                      "background": "#131313"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Inter"
+                      ],
+                      "body": [
+                              "Inter"
+                      ],
+                      "label": [
+                              "Inter"
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: theme('colors.surface-container-low');
+            color: theme('colors.on-surface');
+            font-family: 'Inter', sans-serif;
+        }
+      </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/40 backdrop-blur-[24px] no-border tonal-shift shadow-[0_20px_40px_rgba(229,226,225,0.05)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-full">
+<div class="text-xl font-bold tracking-tighter text-[#6bfb9a]">VITALITY</div>
+<div class="hidden md:flex gap-8 font-['Inter'] font-medium tracking-tight">
+<a class="text-neutral-400 hover:text-[#6bfb9a] transition-all duration-300" href="#">Ecosystem</a>
+<a class="text-[#6bfb9a] border-b-2 border-[#6bfb9a] pb-1 hover:text-[#6bfb9a] transition-all duration-300" href="#">Technology</a>
+<a class="text-neutral-400 hover:text-[#6bfb9a] transition-all duration-300" href="#">Impact</a>
+<a class="text-neutral-400 hover:text-[#6bfb9a] transition-all duration-300" href="#">HUD</a>
+</div>
+<button class="text-[#6bfb9a] font-['Inter'] font-medium tracking-tight hover:text-[#6bfb9a] transition-all duration-300 scale-95 duration-200">
+                Connect
+            </button>
+</div>
+</nav>
+<!-- Main Content: The Transition / Carbon Capture -->
+<main class="flex-grow pt-32 pb-24 px-6 md:px-12 relative overflow-hidden">
+<!-- Background Ambient Effect -->
+<div class="absolute inset-0 pointer-events-none z-0">
+<div class="absolute top-0 left-1/4 w-[50vw] h-[50vw] bg-primary/5 rounded-full blur-[100px] opacity-50 mix-blend-screen"></div>
+<div class="absolute bottom-1/4 right-1/4 w-[40vw] h-[40vw] bg-secondary/5 rounded-full blur-[120px] opacity-30 mix-blend-screen"></div>
+</div>
+<div class="max-w-7xl mx-auto relative z-10 flex flex-col gap-16">
+<!-- Section Header -->
+<header class="max-w-3xl">
+<p class="text-[0.6875rem] font-semibold uppercase tracking-widest text-primary mb-4">The Transition</p>
+<h1 class="text-[1.75rem] font-semibold text-on-surface mb-2 tracking-tight">
+                    기술로 잡아두는 탄소
+                </h1>
+<p class="text-[1.0rem] font-normal text-on-surface-variant max-w-2xl">
+                    Capturing Carbon through Technology. We employ advanced modular systems to extract CO2 directly from the atmosphere, turning an invisible threat into a manageable resource.
+                </p>
+</header>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Featured Module (Left) -->
+<div class="md:col-span-8 bg-surface-variant/40 backdrop-blur-[24px] rounded-xl p-8 relative overflow-hidden group shadow-[0_20px_40px_rgba(229,226,225,0.05)] border-[1.5px] border-outline-variant/20 hover:bg-surface-container-highest transition-colors duration-500">
+<div class="relative z-10 flex flex-col h-full justify-between">
+<div>
+<p class="text-[0.6875rem] font-semibold uppercase tracking-widest text-secondary mb-2">Primary Module</p>
+<h2 class="text-[1.375rem] font-medium text-on-surface mb-4">Direct Air Capture Core</h2>
+<p class="text-[1.0rem] font-normal text-on-surface-variant max-w-md">
+                                High-efficiency fans draw in ambient air, passing it through specialized chemical filters that bind with CO2 molecules.
+                            </p>
+</div>
+<div class="mt-12">
+<div class="flex items-center gap-4">
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center border-[1.5px] border-outline-variant/20 shadow-[0_20px_40px_rgba(229,226,225,0.05)]">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 0;">air</span>
+</div>
+<div class="flex-grow h-1 bg-surface-container-lowest rounded-full overflow-hidden">
+<div class="h-full w-3/4 bg-gradient-to-r from-primary to-primary-container rounded-full"></div>
+</div>
+<div class="w-16 h-16 rounded-full bg-surface-container-lowest flex items-center justify-center border-[1.5px] border-outline-variant/20 shadow-[0_20px_40px_rgba(229,226,225,0.05)]">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 0;">science</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Graphic Image -->
+<div class="absolute right-0 bottom-0 w-1/2 h-full opacity-20 pointer-events-none mix-blend-luminosity">
+<img alt="Abstract rendering of modular air filtration technology with glowing green accents and technical grids" class="w-full h-full object-cover rounded-xl" data-alt="Abstract rendering of modular air filtration technology with glowing green accents and technical grids" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjKHLQDlFHVMjBY0fTae_R757sAXHmQDtHMOjrYHBN_ALlWD8eGpqkXxtTJi4nacqUjBWCDm7-Bj2sY-t5jMh5_rmQTfwsaYlEVS1ZsGzOxnyONjGeGXk2UC1SRbNywZwPVPauCOcAj1paRJSJWtRS7Yf6Lp6Zq_CDMUibh6YtT0KmWsTqAq2FD1THOQXp_yxXXZsGv2a0TkwY70HYeV2Q4T0tZBt_rtpgqjdFN-7oWGOyFaYoqfFj05cGcrZqfeD3Z9SfaDumOb4z"/>
+</div>
+</div>
+<!-- Secondary Metric Module (Right Top) -->
+<div class="md:col-span-4 bg-surface-variant/40 backdrop-blur-[24px] rounded-xl p-8 flex flex-col justify-between shadow-[0_20px_40px_rgba(229,226,225,0.05)] border-[1.5px] border-outline-variant/20 hover:bg-surface-container-highest transition-colors duration-500">
+<div>
+<p class="text-[0.6875rem] font-semibold uppercase tracking-widest text-on-surface-variant mb-2">Current Efficiency</p>
+<h3 class="text-[3.5rem] font-bold text-primary tracking-tighter leading-none mb-2">94<span class="text-[1.75rem] text-primary-container">%</span></h3>
+<p class="text-[1.0rem] font-normal text-on-surface-variant">Carbon sequestration rate per cycle.</p>
+</div>
+</div>
+<!-- Secondary Feature Module (Right Bottom) -->
+<div class="md:col-span-4 bg-surface-variant/40 backdrop-blur-[24px] rounded-xl p-8 flex flex-col justify-between shadow-[0_20px_40px_rgba(229,226,225,0.05)] border-[1.5px] border-outline-variant/20 hover:bg-surface-container-highest transition-colors duration-500">
+<div>
+<div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center mb-6 border-[1.5px] border-outline-variant/20 shadow-[0_20px_40px_rgba(229,226,225,0.05)]">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 0;">memory</span>
+</div>
+<h3 class="text-[1.375rem] font-medium text-on-surface mb-2">Smart Grid Integration</h3>
+<p class="text-[1.0rem] font-normal text-on-surface-variant">
+                            Modules adjust capture rates dynamically based on renewable energy availability.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#3d4a3e]/20 tonal-shift bg-[#131313]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 gap-6 max-w-7xl mx-auto w-full">
+<p class="font-['Inter'] text-[0.6875rem] font-semibold uppercase tracking-widest text-neutral-500">
+                © 2024 ATMOSPHERIC VITALITY. ALL RIGHTS RESERVED.
+            </p>
+<div class="flex gap-6 font-['Inter'] text-[0.6875rem] font-semibold uppercase tracking-widest">
+<a class="text-neutral-500 hover:text-[#6bfb9a] transition-colors" href="#">Terms / 이용약관</a>
+<a class="text-neutral-500 hover:text-[#6bfb9a] transition-colors" href="#">Privacy / 개인정보처리방침</a>
+<a class="text-neutral-500 hover:text-[#6bfb9a] transition-colors" href="#">Contact / 문의하기</a>
+</div>
+</div>
+</footer>
+</body></html>

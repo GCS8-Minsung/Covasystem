@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "cova": {
+      "command": "node",
+      "args": ["server/mcp.js"],
+      "cwd": "C:\\Users\\jsiv1\\Desktop\\GCS-Proj"
+    }
+  }
+}

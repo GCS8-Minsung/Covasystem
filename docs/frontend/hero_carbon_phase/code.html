@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Atmospheric Vitality - The Carbon Phase</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#690005",
+                        "surface-container-highest": "#353535",
+                        "surface-container-low": "#1c1b1b",
+                        "outline-variant": "#3d4a3e",
+                        "on-secondary": "#00315d",
+                        "on-primary-fixed-variant": "#005227",
+                        "surface-bright": "#393939",
+                        "primary": "#6bfb9a",
+                        "tertiary": "#e2e0df",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "secondary-fixed-dim": "#a4c9ff",
+                        "primary-container": "#4ade80",
+                        "surface-tint": "#4de082",
+                        "inverse-primary": "#006d36",
+                        "error-container": "#93000a",
+                        "on-surface": "#e5e2e1",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-fixed": "#e4e2e1",
+                        "surface-variant": "#353535",
+                        "secondary": "#a4c9ff",
+                        "on-primary-fixed": "#00210c",
+                        "tertiary-fixed-dim": "#c8c6c6",
+                        "on-surface-variant": "#bccabb",
+                        "surface-container": "#20201f",
+                        "on-secondary-fixed-variant": "#004883",
+                        "surface-dim": "#131313",
+                        "secondary-container": "#0267b8",
+                        "tertiary-container": "#c6c4c4",
+                        "primary-fixed": "#6dfe9c",
+                        "on-secondary-container": "#d6e5ff",
+                        "on-primary-container": "#005e2d",
+                        "inverse-on-surface": "#313030",
+                        "on-tertiary-container": "#515151",
+                        "on-primary": "#003919",
+                        "surface-container-high": "#2a2a2a",
+                        "error": "#ffb4ab",
+                        "secondary-fixed": "#d4e3ff",
+                        "on-secondary-fixed": "#001c39",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed-dim": "#4de082",
+                        "inverse-surface": "#e5e2e1",
+                        "on-background": "#e5e2e1",
+                        "surface": "#131313",
+                        "on-tertiary": "#303030",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "outline": "#869486",
+                        "background": "#131313"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter", "Apple SD Gothic Neo", "sans-serif"],
+                        "body": ["Inter", "Apple SD Gothic Neo", "sans-serif"],
+                        "label": ["Inter", "Apple SD Gothic Neo", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', 'Apple SD Gothic Neo', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-neutral-950/40 backdrop-blur-[24px] shadow-[0_20px_40px_rgba(229,226,225,0.05)]">
+<div class="flex justify-between items-center px-8 py-6 max-w-full">
+<div class="text-xl font-bold tracking-tighter text-[#6bfb9a] font-['Inter']">
+                VITALITY
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="text-[#6bfb9a] border-b-2 border-[#6bfb9a] pb-1 font-['Inter'] font-medium tracking-tight hover:text-[#6bfb9a] transition-all duration-300" href="#">Ecosystem</a>
+<a class="text-neutral-400 font-['Inter'] font-medium tracking-tight hover:text-[#6bfb9a] transition-all duration-300" href="#">Technology</a>
+<a class="text-neutral-400 font-['Inter'] font-medium tracking-tight hover:text-[#6bfb9a] transition-all duration-300" href="#">Impact</a>
+<a class="text-neutral-400 font-['Inter'] font-medium tracking-tight hover:text-[#6bfb9a] transition-all duration-300" href="#">HUD</a>
+</div>
+<div class="hidden md:block">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-semibold py-3 px-8 rounded-xl shadow-[0_20px_40px_rgba(107,251,154,0.15)] hover:scale-95 duration-200 transition-transform">
+                    Connect
+                </button>
+</div>
+<!-- Mobile Menu Icon (Placeholder) -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary text-2xl">menu</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<main class="flex-grow relative flex flex-col justify-center min-h-screen bg-surface overflow-hidden">
+<!-- Background Texture -->
+<div class="absolute inset-0 z-0">
+<img alt="Deep carbon black and dark smoke textures, looking heavy and industrial" class="w-full h-full object-cover opacity-40 mix-blend-overlay" data-alt="Deep black abstract texture with swirling dark smoke patterns, heavy industrial atmosphere, moody lighting, subtle hints of gray, high resolution" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqBcqf6rYC_UCFb1FBdj-LK9yf_iSAn6adZwWP5eovajDNE2pfjHP9knh-z1fDVIRZ_A6SyVzJGHBUcnxLF1KL4jVHoUond8x0uAkSzwN85hP7RLihHckOdXBBCi4tf0i4MIH4OZZmI2_NROP5IjocdlsDWUOQG4KSK2Qn51tvxUhb6ntqvVTuNHBAyvgYPYOGrsYizrL1r6VWWSC-OIwAAYlcdfJp2pnH_8uiFvkaQmirf28W6jpiLxyfq88656pVV0ShzRMyuIlY"/>
+</div>
+<!-- Ambient Glow -->
+<div class="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-surface-container-high/20 via-surface/80 to-surface"></div>
+<div class="relative z-10 px-8 md:px-16 lg:px-24 flex flex-col justify-center h-full max-w-7xl mx-auto w-full pt-32 pb-24">
+<!-- Bilingual Typography Cluster -->
+<div class="max-w-4xl space-y-6 md:space-y-8 mt-12 md:mt-24">
+<!-- English Pre-title (Label SM) -->
+<div class="flex items-center space-x-4">
+<span class="h-[2px] w-12 bg-primary"></span>
+<span class="font-label text-[0.6875rem] font-semibold uppercase tracking-[0.2em] text-primary">
+                        Phase 01: Carbon Capture
+                    </span>
+</div>
+<!-- Main Titles -->
+<div class="space-y-4">
+<!-- Korean Headline -->
+<h1 class="font-headline text-5xl md:text-7xl lg:text-[5rem] font-bold tracking-tight text-on-surface leading-[1.1]">
+                        탄소, <br/>
+                        새로운 생명의 <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">시작으로</span>
+</h1>
+<!-- English Sub-headline (Title LG / Headline MD) -->
+<h2 class="font-headline text-xl md:text-3xl font-medium tracking-tight text-on-surface-variant opacity-80 max-w-2xl mt-4">
+                        Carbon, to the Start of New Life.
+                    </h2>
+</div>
+<!-- Glassmorphic Info Card -->
+<div class="mt-12 inline-block">
+<div class="bg-surface-variant/40 backdrop-blur-[24px] border border-outline-variant/20 rounded-lg p-6 md:p-8 max-w-md shadow-[0_20px_40px_rgba(229,226,225,0.02)]">
+<p class="font-body text-base text-on-surface-variant leading-relaxed">
+                            Industrial emissions transformed into organic potential. We capture atmospheric carbon to cultivate high-density biological vitality.
+                        </p>
+<div class="mt-6 flex items-center space-x-2 text-secondary font-medium">
+<span class="text-sm">Initiate Process</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Scroll Down Cue (Apple HIG Inspired) -->
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center space-y-3">
+<span class="font-label text-[0.6875rem] font-semibold uppercase tracking-widest text-on-surface-variant opacity-60">
+                Initiate Capture
+            </span>
+<div class="w-[30px] h-[50px] rounded-full border-2 border-outline-variant/30 flex justify-center p-2 bg-surface-container-low/50 backdrop-blur-sm">
+<div class="w-1.5 h-3 bg-primary rounded-full animate-bounce shadow-[0_0_10px_rgba(107,251,154,0.5)]"></div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#3d4a3e]/20 bg-[#131313] flex flex-col md:flex-row justify-between items-center px-12 py-10 gap-6">
+<div class="font-['Inter'] text-[0.6875rem] font-semibold uppercase tracking-widest text-white">
+            © 2024 ATMOSPHERIC VITALITY. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex flex-wrap gap-6 font-['Inter'] text-[0.6875rem] font-semibold uppercase tracking-widest text-neutral-500">
+<a class="hover:text-[#6bfb9a] transition-colors" href="#">Terms / 이용약관</a>
+<a class="hover:text-[#6bfb9a] transition-colors" href="#">Privacy / 개인정보처리방침</a>
+<a class="hover:text-[#6bfb9a] transition-colors" href="#">Contact / 문의하기</a>
+</div>
+</footer>
+</body></html>
