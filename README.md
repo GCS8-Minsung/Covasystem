@@ -63,17 +63,39 @@ Cova System은 두 개의 레이어로 구성됩니다.
 
 ## 기술 스택
 
-| 레이어 | 기술 |
-|--------|------|
-| 프론트엔드 | React 18 + Vite 5 |
-| 스타일 | Tailwind CSS v3 |
-| 애니메이션 | Framer Motion 11 |
-| 손 인식 | MediaPipe Hands |
-| 3D 시각화 | Three.js |
-| 차트 | Recharts |
-| 백엔드 | FastAPI (Python 3.11+) |
-| AI | OpenAI GPT-4o |
-| MCP 서버 | Node.js (stdio) |
+### 프론트엔드
+
+| 분류 | 기술 | 버전 | 용도 |
+|------|------|------|------|
+| 프레임워크 | React | 18.3 | 컴포넌트 기반 UI |
+| 빌드 도구 | Vite | 5.4 | 빠른 HMR, 경량 번들 |
+| 라우팅 | React Router DOM | 7.14 | SPA 페이지 전환 (랜딩 ↔ 대시보드) |
+| 스타일 | Tailwind CSS | 3.4 | 유틸리티 클래스 + 커스텀 디자인 토큰 |
+| 애니메이션 | Framer Motion | 11.0 | 스크롤 진입 애니메이션, spring 물리 |
+| 3D 렌더링 | Three.js | 0.184 | 미세조류 3D 시각화 |
+| 3D React 바인딩 | React Three Fiber | 8.18 | Three.js를 React 컴포넌트로 사용 |
+| 3D 헬퍼 | @react-three/drei | 9.122 | OrbitControls, 조명 프리셋 등 |
+| 손 인식 | MediaPipe Hands | 0.4 | 웹캠 21개 랜드마크 실시간 인식 |
+| 게임 렌더링 | HTML5 Canvas API | 네이티브 | 60fps 파티클 탄소 포집 게임 |
+| 국제화 | React Context | 자체 구현 | 한/영 실시간 전환 (외부 라이브러리 없음) |
+
+### 백엔드
+
+| 분류 | 기술 | 버전 | 용도 |
+|------|------|------|------|
+| 프레임워크 | FastAPI | 0.110+ | REST API 서버, Swagger 자동 생성 |
+| 서버 | Uvicorn | 0.29+ | ASGI 고성능 서버 |
+| AI | OpenAI SDK | 1.0+ | GPT-4o 기반 AI 인사이트·보고서 생성 |
+| 환경 변수 | python-dotenv | 1.0+ | `.env` 로드 |
+| MCP 서버 | @modelcontextprotocol/sdk | 1.29 | Claude에서 자연어로 데이터 조회 |
+
+### 인프라 / 도구
+
+| 분류 | 기술 | 용도 |
+|------|------|------|
+| 패키지 관리 | npm | 프론트엔드 의존성 |
+| 배포 대상 | Vercel | HTTPS 자동 제공 (MediaPipe 웹캠 보안 요구) |
+| 버전 관리 | Git + GitHub | 소스 코드 관리 |
 
 ---
 
